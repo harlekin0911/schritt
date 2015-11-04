@@ -1,0 +1,20 @@
+compile
+run IO
+run
+run 
+compile
+compile -verbose
+targets
+target
+src
+..
+clean
+compile
+run
+projects
+log debug
+debug
+clean
+compile
+clean
+compile

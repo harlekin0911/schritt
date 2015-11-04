@@ -1,0 +1,47 @@
+apply plugin: 'scala'
+apply plugin: 'eclipse'
+
+defaultTasks 'clean', 'build'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.scala-lang:scala-library:2.11.2'
+    compile 'org.scala-lang:scala-xml:2.11.0-M4'
+    compile 'org.scalatest:scalatest_2.11:2.2.1'
+    compile 'org.scalaz:scalaz-core_2.11:7.1.2'    
+    compile 'org.scalaz:scalaz-effect_2.11:7.1.2'
+    compile 'org.scalaz:scalaz-typelevel_2.11:7.1.2'
+    compile 'org.scalaz:scalaz-scalacheck-binding_2.11:7.1.2'
+    
+    testCompile 'org.scalatest:scalatest_2.11:2.2.1'
+
+}
+
+compileScala {
+    scalaCompileOptions.additionalParameters=[ '-JXss2m' ]
+}
+
+
+
+//
+// Tests mittels scalatest
+//
+
+task scalaTest(dependsOn: testClasses) << { 
+       
+        ant.taskdef(name: 'scalatest', 
+                    classname: 'org.scalatest.tools.ScalaTestAntTask', 
+                    classpath: sourceSets.test.runtimeClasspath.asPath 
+        ) 
+        //ant.scalatest(runpath: sourceSets.test.compileClasspath, 
+        ant.scalatest(runpath: "./build/classes/test", 
+                      fork: 'false', 
+                      haltonfailure: 'true')
+                      //suite: 'TestEntityObjTree') 
+                      { reporter(type: 'stdout') }
+                      //{ suite( classname: de.ways42.platform.base.TestEntityObjTree ) }
+                      // { wildcard( package: 'com.artima.joker' ) }
+    } 
