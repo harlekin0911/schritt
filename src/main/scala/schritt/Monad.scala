@@ -50,6 +50,8 @@ trait Monad[F[_]] extends Functor[F] {
     f andThen (fb => flatMap(fb)(g))
 
   // syntax
+  import scala.language.implicitConversions
+
   implicit def toMonadic[A](a: F[A]): Monadic[F,A] =
     new Monadic[F,A] { val F = Monad.this; def get = a }
 }
