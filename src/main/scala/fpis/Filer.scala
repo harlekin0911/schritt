@@ -1,4 +1,4 @@
-package functionalProgramming
+package fpis
 
 object Filer {
     def linesGt40k(filename: String): IO[Boolean] = IO {

@@ -1,4 +1,4 @@
-package functionalProgramming
+package fpis
 
 class Something ( a:Int) {
   odel =>

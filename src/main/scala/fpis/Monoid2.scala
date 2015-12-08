@@ -1,4 +1,4 @@
-package functionalProgramming
+package fpis
 
 trait Monoid2[A] {
   def op(a1: A, a2: A): A

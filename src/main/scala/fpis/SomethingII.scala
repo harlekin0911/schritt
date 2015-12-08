@@ -1,4 +1,4 @@
-package functionalProgramming
+package fpis
 
 object IOII {
 

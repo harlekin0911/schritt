@@ -20,7 +20,7 @@ object TailRec {
     }
   }
     
-  def suspend[A](a: => TailRec[A]) = SuspendT(() => ()).flatMap { _ => a }
+  def suspend[A](a: => TailRec[A]) :TailRec[A] = SuspendT(() => ()).flatMap { _ => a }
 }
 
 object TailRecTests {

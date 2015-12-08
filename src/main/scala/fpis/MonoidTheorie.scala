@@ -1,4 +1,4 @@
-package functionalProgramming
+package fpis
 
 /**
  * see: https://apocalisp.wordpress.com/2010/06/14/on-monoids/

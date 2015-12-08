@@ -1,4 +1,4 @@
-package functional.monoids
+package fpis.monoids
 
 
 trait Monoid[A] {
