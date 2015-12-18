@@ -38,7 +38,8 @@ object RNA {
     
     // Bitmask to isolate a group
     private val M = (1 << S) - 1
-        def fromSeq(buf: Seq[Base]): RNA = {
+        
+    def fromSeq(buf: Seq[Base]): RNA = {
     	  val groups = new Array[Int]((buf.length + N - 1)/ N)
     			for (i <- 0 until buf.length)
     				groups(i / N) |= Base.toInt(buf(i)) << (i % N * S)
