@@ -2,7 +2,7 @@ package schritt
 
 import scala.reflect.ClassTag
 
-trait C[_]
+trait CC[_]
 
 class Variance[B] {
   
@@ -16,8 +16,8 @@ class Variance[B] {
   def foo2[A](x: A)(implicit  f :( A => B)) = x
   
   // Context-Bounds
-  def foo[A : C](x: A) = x
-  def foo1[A](x: A)(implicit $ev0: C[A]) = x
+  def foo[A : CC](x: A) = x
+  def foo1[A](x: A)(implicit $ev0: CC[A]) = x
 
 }
 
@@ -33,24 +33,24 @@ object V {
   val c = peek(List(1,2,3))
 }
 
-object a {
+object aa {
   def ff( i:Int) = i
 }
 
 // default and absract function
-abstract class a( val a:Int, val b:Int =2, val c:Int) {
+abstract class aa( val a:Int, val b:Int =2, val c:Int) {
   def f ( a:Int) : Int
 }
 
 // const
-class b extends a( 1,3,2) {
-   def f(a:Int) :Int  = schritt.a.ff(a)
+class b extends aa( 1,3,2) {
+   def f(a:Int) :Int  = schritt.aa.ff(a)
 }
 class c extends b {
   override def f(a:Int) : Int = 4
 }
 
 object tt {
-  val s = schritt.a.ff(_)
+  val s = schritt.aa.ff(_)
   val rr = new b;
 }

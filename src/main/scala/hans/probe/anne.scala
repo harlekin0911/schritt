@@ -45,5 +45,5 @@ object run {
     	  Console.println( anneMarieMaiere.getChildren)
     	  Console.println( anneMarieMaiere.children)
   }
-
+  
 }
