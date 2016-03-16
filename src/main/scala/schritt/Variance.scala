@@ -24,7 +24,7 @@ class Variance[B] {
 object V {
   def first[T](x : Traversable[T]) = (x.head, x)
   val a = first(Array(1,2))
-  def first[A: ClassManifest](x : Array[A])  = Array(x(0))
+  //def first[A: ClassManifest](x : Array[A])  = Array(x(0))
   def first1[A: ClassTag](x : Array[A])  = Array(x(0))
   
   def peek[A, C <: Traversable[A]](col : C) = (col.head, col)

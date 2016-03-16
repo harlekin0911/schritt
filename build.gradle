@@ -8,13 +8,14 @@ repositories {
 }
 
 dependencies {
-    compile 'org.scala-lang:scala-library:2.11.2'
+    compile 'org.scala-lang:scala-library:2.11.7'
     compile 'org.scala-lang:scala-xml:2.11.0-M4'
     compile 'org.scalatest:scalatest_2.11:2.2.1'
     compile 'org.scalaz:scalaz-core_2.11:7.1.2'    
     compile 'org.scalaz:scalaz-effect_2.11:7.1.2'
     compile 'org.scalaz:scalaz-typelevel_2.11:7.1.2'
     compile 'org.scalaz:scalaz-scalacheck-binding_2.11:7.1.2'
+    compile 'org.scalaz.stream:scalaz-stream_2.11:0.8'
     
     testCompile 'org.scalatest:scalatest_2.11:2.2.1'
 
