@@ -19,4 +19,13 @@ object TestScalazStream {
 	def fahrenheitToCelsius(d:Double) = d*2 
 	
 	//val p : Process[Int,Int] = Process(2) //((i:Int) => i*2)
+	
+	val j = Process(2)
+	
+	import scalaz.stream.process1
+	val k = process1.lift { (_:Int) => 1 }
+	
+	def main( args:Array[String]) = {
+	    u
+	}
 }
