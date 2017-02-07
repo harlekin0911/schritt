@@ -1,9 +1,9 @@
-package scalazstream
+package usefs2
 
 import scalaz.stream._
 import scalaz.concurrent.Task
 
-object TestScalazStream {
+object Testfs2Stream {
 
 	val converter: Task[Unit] = io.linesR("testdata/fahrenheit.txt")
 			.filter(s => !s.trim.isEmpty && !s.startsWith("//"))

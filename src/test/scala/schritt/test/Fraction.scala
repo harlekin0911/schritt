@@ -4,6 +4,7 @@ import org.scalatest.prop.GeneratorDrivenPropertyChecks
 import org.scalatest.Matchers
 import org.scalatest.FunSuite
 import org.scalatest.Suite
+import schritt.test.Fraction
 
 
 
