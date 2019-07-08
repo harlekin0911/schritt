@@ -24,7 +24,7 @@ trait Monad[F[_]] extends Functor[F] {
   
     def sequence_[A](fs: F[A]*): F[Unit] = sequence_(fs.toStream)
   
-    def replicateM[A](n: Int)(f: F[A]): F[List[A]] = Stream.fill(n)(f).foldRight(unit(List[A]()))(map2(_,_)(_ :: _))
+    def replicateM[A](n: Int)(f: F[A]): F[List[A]] = List.fill(n)(f).foldRight(unit(List[A]()))(map2(_,_)(_ :: _))
   
     def replicateM_[A](n: Int)(f: F[A]): F[Unit] = foreachM(Stream.fill(n)(f))(skip)
   

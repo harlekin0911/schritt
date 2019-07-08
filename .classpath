@@ -1,26 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="output" path="bin"/>
-	<classpathentry kind="src" path="src/main/java"/>
-	<classpathentry kind="src" path="src/main/scala"/>
-	<classpathentry kind="src" path="src/test/java"/>
-	<classpathentry kind="src" path="src/test/scala"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin/default"/>
+	<classpathentry output="bin/main" kind="src" path="src/main/scala">
+		<attributes>
+			<attribute name="gradle_scope" value="main"/>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry output="bin/test" kind="src" path="src/test/scala">
+		<attributes>
+			<attribute name="gradle_scope" value="test"/>
+			<attribute name="gradle_used_by_scope" value="test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8/"/>
 	<classpathentry kind="con" path="org.scala-ide.sdt.launching.SCALA_CONTAINER"/>
-	<classpathentry sourcepath="C:/Users/AD06076/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-xml/2.11.0-M4/8583979550b0f48870ebc7d4c7c00e0722d58d3a/scala-xml-2.11.0-M4-sources.jar" kind="lib" path="C:/Users/AD06076/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-xml/2.11.0-M4/4ec2850badf3264be8a3048882f9b963ecc605b8/scala-xml-2.11.0-M4.jar"/>
-	<classpathentry sourcepath="C:/Users/AD06076/.gradle/caches/modules-2/files-2.1/org.scalatest/scalatest_2.11/2.2.1/d8699d7d05c84970d79856a1b1512eb5b7670bb3/scalatest_2.11-2.2.1-sources.jar" kind="lib" path="C:/Users/AD06076/.gradle/caches/modules-2/files-2.1/org.scalatest/scalatest_2.11/2.2.1/c60cda0186a96c61aed4983a3598c7c835074038/scalatest_2.11-2.2.1.jar"/>
-	<classpathentry sourcepath="C:/Users/AD06076/.gradle/caches/modules-2/files-2.1/org.scalaz/scalaz-typelevel_2.11/7.1.2/47677709aab04c50f0593c0a83f1009be8d1fa14/scalaz-typelevel_2.11-7.1.2-sources.jar" kind="lib" path="C:/Users/AD06076/.gradle/caches/modules-2/files-2.1/org.scalaz/scalaz-typelevel_2.11/7.1.2/85053938e623584d7e6762b24f6d3837d95dbaa3/scalaz-typelevel_2.11-7.1.2.jar"/>
-	<classpathentry sourcepath="C:/Users/AD06076/.gradle/caches/modules-2/files-2.1/org.scalaz/scalaz-scalacheck-binding_2.11/7.1.2/c93517230a4998d6ed96702746ea093816f262ad/scalaz-scalacheck-binding_2.11-7.1.2-sources.jar" kind="lib" path="C:/Users/AD06076/.gradle/caches/modules-2/files-2.1/org.scalaz/scalaz-scalacheck-binding_2.11/7.1.2/aad422d27642e17251e6fef980a9023bba26cecb/scalaz-scalacheck-binding_2.11-7.1.2.jar"/>
-	<classpathentry sourcepath="C:/Users/AD06076/.gradle/caches/modules-2/files-2.1/org.scalaz.stream/scalaz-stream_2.11/0.8/99f6a6a8c5d3a1a9e24fed17c0eb3f9261f63d76/scalaz-stream_2.11-0.8-sources.jar" kind="lib" path="C:/Users/AD06076/.gradle/caches/modules-2/files-2.1/org.scalaz.stream/scalaz-stream_2.11/0.8/e6b1ab02fd250b66f7b79d71523e2f4ccfbb0aa0/scalaz-stream_2.11-0.8.jar"/>
-	<classpathentry sourcepath="C:/Users/AD06076/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-reflect/2.11.2/84c4ff1b1d352bc3494c3cb357051dff7ac84826/scala-reflect-2.11.2-sources.jar" kind="lib" path="C:/Users/AD06076/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-reflect/2.11.2/1a6265829fcde7d3a522fe2c0366f2fc40727b17/scala-reflect-2.11.2.jar"/>
-	<classpathentry sourcepath="C:/Users/AD06076/.gradle/caches/modules-2/files-2.1/org.scala-lang.modules/scala-parser-combinators_2.11/1.0.4/2c66955d5543265eb450de4e9ec7ac467d94be54/scala-parser-combinators_2.11-1.0.4-sources.jar" kind="lib" path="C:/Users/AD06076/.gradle/caches/modules-2/files-2.1/org.scala-lang.modules/scala-parser-combinators_2.11/1.0.4/7369d653bcfa95d321994660477a4d7e81d7f490/scala-parser-combinators_2.11-1.0.4.jar"/>
-	<classpathentry sourcepath="C:/Users/AD06076/.gradle/caches/modules-2/files-2.1/org.scalaz/scalaz-xml_2.11/7.1.2/ffa21243916a5cd34a19d4030535f71bc1fda58b/scalaz-xml_2.11-7.1.2-sources.jar" kind="lib" path="C:/Users/AD06076/.gradle/caches/modules-2/files-2.1/org.scalaz/scalaz-xml_2.11/7.1.2/59cca0afa6ed3efa5ec2881ca772229a547c4600/scalaz-xml_2.11-7.1.2.jar"/>
-	<classpathentry sourcepath="C:/Users/AD06076/.gradle/caches/modules-2/files-2.1/org.scalaz/scalaz-iteratee_2.11/7.1.2/abc9e4082e1ef4a2d8c61c2af955a3361b550d22/scalaz-iteratee_2.11-7.1.2-sources.jar" kind="lib" path="C:/Users/AD06076/.gradle/caches/modules-2/files-2.1/org.scalaz/scalaz-iteratee_2.11/7.1.2/7da1d350895205892bf1322eeff413b3cd98f11/scalaz-iteratee_2.11-7.1.2.jar"/>
-	<classpathentry sourcepath="C:/Users/AD06076/.gradle/caches/modules-2/files-2.1/org.scalacheck/scalacheck_2.11/1.11.4/d7e0360dd1b95f4ffc033816764583d7c32cd20d/scalacheck_2.11-1.11.4-sources.jar" kind="lib" path="C:/Users/AD06076/.gradle/caches/modules-2/files-2.1/org.scalacheck/scalacheck_2.11/1.11.4/93f96bb9fa311f72a8513a10f72ae21482f301b1/scalacheck_2.11-1.11.4.jar"/>
-	<classpathentry sourcepath="C:/Users/AD06076/.gradle/caches/modules-2/files-2.1/org.scodec/scodec-bits_2.11/1.0.9/cc9b5c76bb69e68b1422d0ac83eb8410dc525d0d/scodec-bits_2.11-1.0.9-sources.jar" kind="lib" path="C:/Users/AD06076/.gradle/caches/modules-2/files-2.1/org.scodec/scodec-bits_2.11/1.0.9/b085174994a929f944c7597cc5428539626b3cff/scodec-bits_2.11-1.0.9.jar"/>
-	<classpathentry sourcepath="C:/Users/AD06076/.gradle/caches/modules-2/files-2.1/org.scala-sbt/test-interface/1.0/d44b23e9e3419ad0e00b91bba764a48d43075000/test-interface-1.0-sources.jar" kind="lib" path="C:/Users/AD06076/.gradle/caches/modules-2/files-2.1/org.scala-sbt/test-interface/1.0/a3f14d010c4cb32071f863d97291df31603b521/test-interface-1.0.jar"/>
-	<classpathentry sourcepath="C:/Users/AD06076/.gradle/caches/modules-2/files-2.1/org.scala-lang.modules/scala-xml_2.11/1.0.4/eb417145240036662d65c1c42598089b9d15d634/scala-xml_2.11-1.0.4-sources.jar" kind="lib" path="C:/Users/AD06076/.gradle/caches/modules-2/files-2.1/org.scala-lang.modules/scala-xml_2.11/1.0.4/b67c76af885ba3323ce51bbed4c9232f4bd5d8fd/scala-xml_2.11-1.0.4.jar"/>
-	<classpathentry sourcepath="C:/Users/AD06076/.gradle/caches/modules-2/files-2.1/org.scalaz/scalaz-core_2.11/7.1.4/aedcafc20cfb6fdfadc65ea888f52669e46959f4/scalaz-core_2.11-7.1.4-sources.jar" kind="lib" path="C:/Users/AD06076/.gradle/caches/modules-2/files-2.1/org.scalaz/scalaz-core_2.11/7.1.4/fe399f9e5943f132e06087eacf7baaa442996686/scalaz-core_2.11-7.1.4.jar"/>
-	<classpathentry sourcepath="C:/Users/AD06076/.gradle/caches/modules-2/files-2.1/org.scalaz/scalaz-concurrent_2.11/7.1.4/6edfa8406ef0fedf7b1a487eb812e22bf65d1c3c/scalaz-concurrent_2.11-7.1.4-sources.jar" kind="lib" path="C:/Users/AD06076/.gradle/caches/modules-2/files-2.1/org.scalaz/scalaz-concurrent_2.11/7.1.4/f2847b5a4aa7fcf6c23b540189e5fa7bd2a54a18/scalaz-concurrent_2.11-7.1.4.jar"/>
-	<classpathentry sourcepath="C:/Users/AD06076/.gradle/caches/modules-2/files-2.1/org.scalaz/scalaz-effect_2.11/7.1.4/d5099ce4c8c833305a95bbd6c6ba9ef461924658/scalaz-effect_2.11-7.1.4-sources.jar" kind="lib" path="C:/Users/AD06076/.gradle/caches/modules-2/files-2.1/org.scalaz/scalaz-effect_2.11/7.1.4/c205b5bf8575d6408f2c1736c6e121dfee9059d8/scalaz-effect_2.11-7.1.4.jar"/>
+	<classpathentry sourcepath="C:/Users/P001117/.gradle/caches/modules-2/files-2.1/org.scalatest/scalatest_2.12/3.0.8/974583d0b274d44fa2f4c619b4a2c0d3c6fadad9/scalatest_2.12-3.0.8-sources.jar" kind="lib" path="C:/Users/P001117/.gradle/caches/modules-2/files-2.1/org.scalatest/scalatest_2.12/3.0.8/8493ffa579676977b810a7a9fdc23af9d3c8af7f/scalatest_2.12-3.0.8.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/P001117/.gradle/caches/modules-2/files-2.1/org.scala-lang.modules/scala-xml_2.12/1.2.0/97b3021c2ceef1170ff2f0e8a12a1cb5dfc9bfd3/scala-xml_2.12-1.2.0-sources.jar" kind="lib" path="C:/Users/P001117/.gradle/caches/modules-2/files-2.1/org.scala-lang.modules/scala-xml_2.12/1.2.0/5d38ac30beb8420dd395c0af447ba412158965e6/scala-xml_2.12-1.2.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/P001117/.gradle/caches/modules-2/files-2.1/org.scalaz/scalaz-scalacheck-binding_2.12/7.3.0-M30/e5ad1698b0e136a609b6e4eb978626234ef5be60/scalaz-scalacheck-binding_2.12-7.3.0-M30-sources.jar" kind="lib" path="C:/Users/P001117/.gradle/caches/modules-2/files-2.1/org.scalaz/scalaz-scalacheck-binding_2.12/7.3.0-M30/f98b6b2e224b28a9da54c46119bcb15daaa2b0d1/scalaz-scalacheck-binding_2.12-7.3.0-M30.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/P001117/.gradle/caches/modules-2/files-2.1/org.scalaz/scalaz-iteratee_2.12/7.3.0-M30/a34f44ff9eb17f1930f657678d3ee7aa8d38c40e/scalaz-iteratee_2.12-7.3.0-M30-sources.jar" kind="lib" path="C:/Users/P001117/.gradle/caches/modules-2/files-2.1/org.scalaz/scalaz-iteratee_2.12/7.3.0-M30/2ded884592eff7f4ddb195577ffcedaca8eeae37/scalaz-iteratee_2.12-7.3.0-M30.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/P001117/.gradle/caches/modules-2/files-2.1/org.scalaz.stream/scalaz-stream_2.12/0.8.6/1540535919ea77d4b9f4b752399d7782b705fd4b/scalaz-stream_2.12-0.8.6-sources.jar" kind="lib" path="C:/Users/P001117/.gradle/caches/modules-2/files-2.1/org.scalaz.stream/scalaz-stream_2.12/0.8.6/32e7b71ecb67261fcdc3b9f08f20c49df49bebda/scalaz-stream_2.12-0.8.6.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/P001117/.gradle/caches/modules-2/files-2.1/org.scalaz/scalaz-concurrent_2.12/7.1.11/2360f92a36fc78fd58a12090526f3aac8706c52e/scalaz-concurrent_2.12-7.1.11-sources.jar" kind="lib" path="C:/Users/P001117/.gradle/caches/modules-2/files-2.1/org.scalaz/scalaz-concurrent_2.12/7.1.11/ada9147561d4cfcc6dbf3665d741b38cbb8533b5/scalaz-concurrent_2.12-7.1.11.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/P001117/.gradle/caches/modules-2/files-2.1/org.scalaz/scalaz-effect_2.12/7.3.0-M30/3eb1f8252506deee869bf5e300f8440b2bdce9f9/scalaz-effect_2.12-7.3.0-M30-sources.jar" kind="lib" path="C:/Users/P001117/.gradle/caches/modules-2/files-2.1/org.scalaz/scalaz-effect_2.12/7.3.0-M30/e6c7d2011d8073b424781e88b25d867676c14904/scalaz-effect_2.12-7.3.0-M30.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/P001117/.gradle/caches/modules-2/files-2.1/org.scalaz/scalaz-core_2.12/7.3.0-M30/343ece440099ea79871fe5ce1564c1e5616addce/scalaz-core_2.12-7.3.0-M30-sources.jar" kind="lib" path="C:/Users/P001117/.gradle/caches/modules-2/files-2.1/org.scalaz/scalaz-core_2.12/7.3.0-M30/2c453f727fd5b7ba3bb12dd2fb92fcf4ec723a7f/scalaz-core_2.12-7.3.0-M30.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/P001117/.gradle/caches/modules-2/files-2.1/org.spire-math/spire_2.12/0.13.0/286fffb835b9d59c8d1d5418de186ffeb110da2e/spire_2.12-0.13.0-sources.jar" kind="lib" path="C:/Users/P001117/.gradle/caches/modules-2/files-2.1/org.spire-math/spire_2.12/0.13.0/28b4a0b11618f82ded3d34ef58292c6c93d7550d/spire_2.12-0.13.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/P001117/.gradle/caches/modules-2/files-2.1/org.scala-lang.modules/scala-parser-combinators_2.12/1.1.2/17be9d543fa1f7f01d57722cc37d0c4024a15f69/scala-parser-combinators_2.12-1.1.2-sources.jar" kind="lib" path="C:/Users/P001117/.gradle/caches/modules-2/files-2.1/org.scala-lang.modules/scala-parser-combinators_2.12/1.1.2/2ad65ccbeed662b51e2b96221cb4e7d7d6b7b87a/scala-parser-combinators_2.12-1.1.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/P001117/.gradle/caches/modules-2/files-2.1/org.scalactic/scalactic_2.12/3.0.8/a3b6cb34439f6b0ddbecb83a22eb5add030a1fdb/scalactic_2.12-3.0.8-sources.jar" kind="lib" path="C:/Users/P001117/.gradle/caches/modules-2/files-2.1/org.scalactic/scalactic_2.12/3.0.8/b50559dfc4a691c1089f9c8812e1d6fd17f80277/scalactic_2.12-3.0.8.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/P001117/.gradle/caches/modules-2/files-2.1/org.spire-math/spire-macros_2.12/0.13.0/1f4f761a602f6e1659bf2351fd11a3e79f7fffa8/spire-macros_2.12-0.13.0-sources.jar" kind="lib" path="C:/Users/P001117/.gradle/caches/modules-2/files-2.1/org.spire-math/spire-macros_2.12/0.13.0/2276ac9864b9209049fdc2a151352ccffebe4bad/spire-macros_2.12-0.13.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/P001117/.gradle/caches/modules-2/files-2.1/org.typelevel/machinist_2.12/0.6.1/3a218f5ae9095ff2f5719dd158a2f2ffea8ca682/machinist_2.12-0.6.1-sources.jar" kind="lib" path="C:/Users/P001117/.gradle/caches/modules-2/files-2.1/org.typelevel/machinist_2.12/0.6.1/13f7388cf36bcecf51bde7b87a216d5aa101ae2a/machinist_2.12-0.6.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/P001117/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-reflect/2.12.8/2b4a5bbdc19f8ab34d474f30dbca957addc8ae09/scala-reflect-2.12.8-sources.jar" kind="lib" path="C:/Users/P001117/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-reflect/2.12.8/682d33402cdae50258afa2c0860eb54688dab610/scala-reflect-2.12.8.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/P001117/.gradle/caches/modules-2/files-2.1/org.scalacheck/scalacheck_2.12/1.14.0/ee64746db17b19449fae7e4b9f9ffc8fb7e79d80/scalacheck_2.12-1.14.0-sources.jar" kind="lib" path="C:/Users/P001117/.gradle/caches/modules-2/files-2.1/org.scalacheck/scalacheck_2.12/1.14.0/8b4354c1a5e1799b4b0ab888d326e7f7fdb02d0d/scalacheck_2.12-1.14.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/P001117/.gradle/caches/modules-2/files-2.1/org.scodec/scodec-bits_2.12/1.1.2/2f26238ced4f8515e83db0a3ae0c9ed566aa675/scodec-bits_2.12-1.1.2-sources.jar" kind="lib" path="C:/Users/P001117/.gradle/caches/modules-2/files-2.1/org.scodec/scodec-bits_2.12/1.1.2/6adeb0776970fe783d33977fa08755597afa1458/scodec-bits_2.12-1.1.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/P001117/.gradle/caches/modules-2/files-2.1/org.scala-sbt/test-interface/1.0/d44b23e9e3419ad0e00b91bba764a48d43075000/test-interface-1.0-sources.jar" kind="lib" path="C:/Users/P001117/.gradle/caches/modules-2/files-2.1/org.scala-sbt/test-interface/1.0/a3f14d010c4cb32071f863d97291df31603b521/test-interface-1.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
 </classpath>
