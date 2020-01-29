@@ -15,8 +15,8 @@ object ReadFile {
 			//val bestand   = "J:/users/p001117/home/run/baNreMonitorZzr/ergebnisse/20191010/BaNReMonitorZzrBestand-20191010-150210.csv"
 			//val summen    = "J:/users/p001117/home/run/baNreMonitorZzr/ergebnisse/20191010/BaNReMonitorZzrSummen-20191010-150210.csv"
 	  
-	   val bestand    = "J:/users/p001117/home/run/baNreMonitorZzr/BaNReMonitorZzrBestand-20191014-94124.csv"
-	   val summen    = "J:/users/p001117/home/run/baNreMonitorZzr/BaNReMonitorZzrSummen-20191014-94124.csv"
+	   val bestand    = "J:/users/p001117/home/run/baNreMonitorZzr/BaNReMonitorZzrBestand-20191015-141508.csv"
+	   val summen    = "J:/users/p001117/home/run/baNreMonitorZzr/BaNReMonitorZzrSummen-20191015-141508.csv"
 
 			val d = Source.fromFile(bestand)(Codec.ISO8859).getLines
 			val e = d.foldRight( ( 0.0, 0.0, 0.0))( sumbestand)
