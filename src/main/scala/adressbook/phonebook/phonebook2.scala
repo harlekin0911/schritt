@@ -15,7 +15,7 @@ object phonebook2 {
         <phonebook>{ ch }{ newEntry }</phonebook>
   }
 
-  def add2( p: Node, e: Node ) = Elem(null, p.label, Null, TopScope, (p.child ++ e):_*)
+  def add2( p: Node, e: Node ) = Elem(null, p.label, Null, TopScope, true, (p.child ++ e):_*)
 
   val pb2_2 = <entry>
            <name>Kim</name> 

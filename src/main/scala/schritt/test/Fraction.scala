@@ -1,7 +1,7 @@
 package schritt.test
 
-import org.scalatest.prop.GeneratorDrivenPropertyChecks
-import org.scalatest.Matchers
+//import org.scalatest.prop.GeneratorDrivenPropertyChecks
+//import org.scalatest.Matchers
 
 
 class Fraction(n: Int, d: Int) {

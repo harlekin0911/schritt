@@ -4,7 +4,7 @@ import org.scalatest.prop.GeneratorDrivenPropertyChecks
 import org.scalatest.Matchers
 import org.scalatest.FunSuite
 import org.scalatest.Suite
-import schritt.test.Fraction
+//import schritt.test.Fraction
 
 
 
@@ -23,7 +23,7 @@ class TestFraction  extends FunSuite with GeneratorDrivenPropertyChecks with Mat
 			    else if (n != 0)
 				    f.numer should be < 0
 			    else
-			        f.numer should be === 0
+			        f.numer should be  === 0
 			        f.denom should be > 0
 
 	        }
