@@ -7,6 +7,7 @@ class Matrix(private val repr : Array[Array[Double]]) {
         repr(idx)
     }
     def col(idx : Int) : Seq[Double] = {
+      import scala.language.postfixOps
         repr.foldLeft(ArrayBuffer[Double]()) { 
           (buffer, currentRow) => buffer.append(currentRow(idx)) 
           buffer } toArray

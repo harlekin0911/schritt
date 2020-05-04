@@ -13,9 +13,9 @@ class ReadFieldGeneric {
     }
 
     def getCCParams(cc: AnyRef) : Map[String,Any] =
-        (Map[String, Any]() /: cc.getClass.getDeclaredFields) {
-          (a, f) => f.setAccessible(true) 
-          a + (f.getName -> f.get(cc))
+          cc.getClass.getDeclaredFields.foldLeft(Map[String, Any]()) {
+            (a, f) => f.setAccessible(true) 
+            a + (f.getName -> f.get(cc))
          }
 
 }

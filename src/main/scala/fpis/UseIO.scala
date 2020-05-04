@@ -45,7 +45,7 @@ object UseIO3 extends Monad[UseIO3] {
 
     def fahrenheitToCelsius(f: Double): Double = (f - 32) * 5.0/9.0
     
-    def ReadLine: UseIO3[String] = UseIO3 { readLine }
+    def ReadLine: UseIO3[String] = UseIO3 { scala.io.StdIn.readLine }
     def PrintLine(msg: String): UseIO3[Unit] = UseIO3 { println(msg) }
     def converter: UseIO3[Unit] = for {
         _ <- PrintLine("Enter a temperature in degrees Fahrenheit: ")

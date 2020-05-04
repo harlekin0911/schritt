@@ -8,27 +8,16 @@ repositories {
 }
 
 dependencies {
-    compile group: 'org.scala-lang', name: 'scala-library', version: '2.12.8'
-    //compile 'org.scala-lang:scala-library:2.12.7'
-    //compile 'org.scala-lang:scala-xml:2.11.0-M4'
-    compile group: 'org.scala-lang.modules', name: 'scala-xml_2.12', version: '1.2.0'
-    //compile 'org.scalatest:scalatest_2.11:2.2.1'
-    compile group: 'org.scalatest', name: 'scalatest_2.12', version: '3.0.8'
-    compile group: 'org.scalaz', name: 'scalaz-core_2.12', version: '7.3.0-M30'
-    //compile 'org.scalaz:scalaz-core_2.11:7.1.2'    
-    //compile 'org.scalaz:scalaz-effect_2.11:7.1.2'
-    compile group: 'org.scalaz', name: 'scalaz-effect_2.12', version: '7.3.0-M30'
-    //compile 'org.scalaz:scalaz-typelevel_2.11:7.1.2'
-    compile group: 'org.scalaz', name: 'scalaz-effect_2.12', version: '7.3.0-M30'
-    //compile 'org.scalaz:scalaz-scalacheck-binding_2.11:7.1.2'
-    compile group: 'org.scalaz', name: 'scalaz-scalacheck-binding_2.12', version: '7.3.0-M30'
-    //compile 'org.scalaz.stream:scalaz-stream_2.11:0.8'
-    compile group: 'org.scalaz.stream', name: 'scalaz-stream_2.12', version: '0.8.6'
-    //compile 'org.spire-math:spire_2.11:0.11.0'
-    // https://mvnrepository.com/artifact/org.spire-math/spire
-    compile group: 'org.spire-math', name: 'spire_2.12', version: '0.13.0'
-    compile group: 'org.scala-lang.modules', name: 'scala-parser-combinators_2.12', version: '1.1.2'
-    
+    compile group: 'org.scala-lang',         name: 'scala-library',                  version: '2.12.10'
+    compile group: 'org.scala-lang.modules', name: 'scala-xml_2.12',                 version: '2.0.0-M1'
+    compile group: 'org.scala-lang.modules', name: 'scala-parser-combinators_2.12',  version: '1.1.2'
+    compile group: 'org.scalatest',          name: 'scalatest_2.12',                 version: '3.0.8'
+    compile group: 'org.scalaz',             name: 'scalaz-core_2.12',               version: '7.3.0-M30'
+    compile group: 'org.scalaz',             name: 'scalaz-effect_2.12',             version: '7.3.0-M30'
+    compile group: 'org.scalaz',             name: 'scalaz-scalacheck-binding_2.12', version: '7.3.0-M30'
+    compile group: 'org.scalaz.stream',      name: 'scalaz-stream_2.12',             version: '0.8.6'
+    compile group: 'org.spire-math',         name: 'spire_2.12',                     version: '0.13.0'
+    compile group: 'org.typelevel', name: 'cats-effect_2.13', version: '2.1.3'
     
     
     //testCompile 'org.scalatest:scalatest_2.11:2.2.1'
@@ -37,7 +26,9 @@ dependencies {
 }
 
 compileScala {
-    scalaCompileOptions.additionalParameters=[ '-JXss2m' ]
+    scalaCompileOptions.additionalParameters=[ '-JXss2m']
+    scalaCompileOptions.additionalParameters=[  "-deprecation", "-feature" ]
+    scalaCompileOptions.additionalParameters=[ "-Ypartial-unification" ]
 }
 
 

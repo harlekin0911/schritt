@@ -37,10 +37,13 @@ trait AccountService {
 object AccountService extends AccountService
 
 import AccountService._
+import java.util.Calendar
+import java.util.GregorianCalendar
 
 object accrun {
    import AccountService._
-
+   
+   //(new GregorianCalendar( 2015, 1, 1))
    val date = new Date( 1,1,2015)
    val a = Account("a1", "John", date)
    a.balance == Balance(Amount(0))

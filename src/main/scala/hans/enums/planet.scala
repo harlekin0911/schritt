@@ -34,6 +34,7 @@ object EnumMain {
       println("Usage:  scala Planet <earth_weight>")
     } else {
       import Planet._
+      import scala.language.postfixOps
       val earthWeight = args(0) toInt
       val mass = earthWeight / EARTH.surfaceGravity
 

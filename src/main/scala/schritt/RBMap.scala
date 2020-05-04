@@ -80,7 +80,7 @@ abstract class RBMap[K, V] (implicit cmp : K => Ordered[K]) {
 
 
 // A leaf node.
-private case class L[K, V] (implicit cmp : K => Ordered[K]) extends RBMap[K,V]  {
+private case class L[K, V]() (implicit cmp : K => Ordered[K]) extends RBMap[K,V]  {
   def get(k : K) : Option[V] = None
 
   private[map] def modWith (k : K, f : (K, Option[V]) => Option[V]) : RBMap[K,V] = {

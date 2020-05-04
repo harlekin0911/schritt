@@ -20,7 +20,12 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="C:/Users/P001117/.gradle/caches/modules-2/files-2.1/org.scala-lang.modules/scala-xml_2.12/1.2.0/97b3021c2ceef1170ff2f0e8a12a1cb5dfc9bfd3/scala-xml_2.12-1.2.0-sources.jar" kind="lib" path="C:/Users/P001117/.gradle/caches/modules-2/files-2.1/org.scala-lang.modules/scala-xml_2.12/1.2.0/5d38ac30beb8420dd395c0af447ba412158965e6/scala-xml_2.12-1.2.0.jar">
+	<classpathentry sourcepath="C:/Users/P001117/.gradle/caches/modules-2/files-2.1/org.scala-lang.modules/scala-xml_2.12/2.0.0-M1/4b967b1b076861d9b196afdf9fd9f38e88cda917/scala-xml_2.12-2.0.0-M1-sources.jar" kind="lib" path="C:/Users/P001117/.gradle/caches/modules-2/files-2.1/org.scala-lang.modules/scala-xml_2.12/2.0.0-M1/d26519e57b099b269bc9e9894f1c908c7f1d0015/scala-xml_2.12-2.0.0-M1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/P001117/.gradle/caches/modules-2/files-2.1/org.scala-lang.modules/scala-parser-combinators_2.12/1.1.2/17be9d543fa1f7f01d57722cc37d0c4024a15f69/scala-parser-combinators_2.12-1.1.2-sources.jar" kind="lib" path="C:/Users/P001117/.gradle/caches/modules-2/files-2.1/org.scala-lang.modules/scala-parser-combinators_2.12/1.1.2/2ad65ccbeed662b51e2b96221cb4e7d7d6b7b87a/scala-parser-combinators_2.12-1.1.2.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
@@ -60,7 +65,7 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="C:/Users/P001117/.gradle/caches/modules-2/files-2.1/org.scala-lang.modules/scala-parser-combinators_2.12/1.1.2/17be9d543fa1f7f01d57722cc37d0c4024a15f69/scala-parser-combinators_2.12-1.1.2-sources.jar" kind="lib" path="C:/Users/P001117/.gradle/caches/modules-2/files-2.1/org.scala-lang.modules/scala-parser-combinators_2.12/1.1.2/2ad65ccbeed662b51e2b96221cb4e7d7d6b7b87a/scala-parser-combinators_2.12-1.1.2.jar">
+	<classpathentry sourcepath="C:/Users/P001117/.gradle/caches/modules-2/files-2.1/org.typelevel/cats-effect_2.13/2.1.3/cbf04892487ccbed57912434635e6d0bff478f86/cats-effect_2.13-2.1.3-sources.jar" kind="lib" path="C:/Users/P001117/.gradle/caches/modules-2/files-2.1/org.typelevel/cats-effect_2.13/2.1.3/5c57fa93500bdc6adf691d66a7fcc0d44eab1bf7/cats-effect_2.13-2.1.3.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
@@ -91,6 +96,26 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry sourcepath="C:/Users/P001117/.gradle/caches/modules-2/files-2.1/org.scodec/scodec-bits_2.12/1.1.2/2f26238ced4f8515e83db0a3ae0c9ed566aa675/scodec-bits_2.12-1.1.2-sources.jar" kind="lib" path="C:/Users/P001117/.gradle/caches/modules-2/files-2.1/org.scodec/scodec-bits_2.12/1.1.2/6adeb0776970fe783d33977fa08755597afa1458/scodec-bits_2.12-1.1.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/P001117/.gradle/caches/modules-2/files-2.1/org.typelevel/cats-core_2.13/2.1.1/2c81fde5598cb6c67ea4b8df8a134a9abd368843/cats-core_2.13-2.1.1-sources.jar" kind="lib" path="C:/Users/P001117/.gradle/caches/modules-2/files-2.1/org.typelevel/cats-core_2.13/2.1.1/849023c29392ea3563bb22a3ffd643cae134fbb4/cats-core_2.13-2.1.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/P001117/.gradle/caches/modules-2/files-2.1/org.typelevel/cats-macros_2.13/2.1.1/8e87469ce851cfe8864909efefd16d22b1f24154/cats-macros_2.13-2.1.1-sources.jar" kind="lib" path="C:/Users/P001117/.gradle/caches/modules-2/files-2.1/org.typelevel/cats-macros_2.13/2.1.1/6210ffc3ace150150241929d023bbaf519fb427/cats-macros_2.13-2.1.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/P001117/.gradle/caches/modules-2/files-2.1/org.typelevel/cats-kernel_2.13/2.1.1/9dfae043994f0b5284993ac6db9be6834d7c53c6/cats-kernel_2.13-2.1.1-sources.jar" kind="lib" path="C:/Users/P001117/.gradle/caches/modules-2/files-2.1/org.typelevel/cats-kernel_2.13/2.1.1/535ba86644dfed513c4c346d95dc61dd21e52d1b/cats-kernel_2.13-2.1.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/P001117/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.13.1/43c50cb5c8a9112d13d219d1c3d75694832171c/scala-library-2.13.1-sources.jar" kind="lib" path="C:/Users/P001117/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.13.1/1418c956704990564fb9dfac5960647ca54b5a91/scala-library-2.13.1.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>

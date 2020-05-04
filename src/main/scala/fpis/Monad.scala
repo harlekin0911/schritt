@@ -142,7 +142,7 @@ object IO extends Monad[IO] {
 
 object dada {
     def fahrenheitToCelsius(f: Double): Double = (f - 32) * 5.0/9.0
-    def ReadLine: IO[String] = new IO[String] { def run = readLine }
+    def ReadLine: IO[String] = new IO[String] { def run = scala.io.StdIn.readLine }
     def PrintLine(msg: String): IO[Unit] = new IO[Unit] { def run = println(msg) }
     def printLine(s: String): IO[Unit] = Suspend(() => Return(println(s)))
     def converter = {

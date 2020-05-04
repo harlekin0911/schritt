@@ -10,6 +10,8 @@ object peterle {
     
     def main(args: Array[String]) = {
       
+      import scala.language.postfixOps
+      
        Console.println( a take 5 toList)
        Console.println( b take 5 toList)
        Console.println( a.drop( 5) take 1 )
