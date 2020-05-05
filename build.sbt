@@ -9,12 +9,17 @@ scalacOptions ++= Seq("-deprecation", "-feature")
 
 
 //libraryDependencies += "org.scala-lang"        % "scala-library"       % "2.12.10"
-libraryDependencies += "org.scala-lang.modules" %% "scala-xml"                % "2.0.0-M1"
-libraryDependencies += "org.scala-lang.modules" %% "scala-parser-combinators" % "1.1.2"
+//libraryDependencies += "org.scala-lang.modules" %% "scala-xml"                % "2.0.0-M1"
+libraryDependencies += "org.scala-lang.modules" %% "scala-xml"                % "1.0.5"
+//libraryDependencies += "org.scala-lang.modules" %% "scala-parser-combinators" % "1.1.2"
+libraryDependencies += "org.scala-lang.modules" %% "scala-parser-combinators" % "1.0.4"
 libraryDependencies += "org.scalatest"          %% "scalatest"          % "3.0.8" % Test
-libraryDependencies += "org.scalaz"             %% "scalaz-core"        % "7.3.0-M30"
-libraryDependencies += "org.scalaz"             %% "scalaz-effect"      % "7.3.0-M30"
-libraryDependencies += "org.scalaz"             %% "scalaz-scalacheck-binding" % "7.3.0-M30"
+//libraryDependencies += "org.scalaz"             %% "scalaz-core"        % "7.3.0-M30"
+libraryDependencies += "org.scalaz"             %% "scalaz-core"        % "7.1.11"
+//libraryDependencies += "org.scalaz"             %% "scalaz-effect"      % "7.3.0-M30"
+libraryDependencies += "org.scalaz"             %% "scalaz-effect"      % "7.1.11"
+//libraryDependencies += "org.scalaz"             %% "scalaz-scalacheck-binding" % "7.3.0-M30"
+libraryDependencies += "org.scalaz"             %% "scalaz-scalacheck-binding" % "7.1.11"
 libraryDependencies += "org.scalaz.stream"      %% "scalaz-stream" % "0.8.6"
 libraryDependencies += "org.spire-math"         %% "spire"         % "0.13.0"
 libraryDependencies += "org.typelevel"          %% "cats-effect"  % "2.1.3"
