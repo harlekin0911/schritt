@@ -136,6 +136,9 @@ object IO extends Monad[IO] {
              case Suspend(r) => run(f(r()))
              case FlatMap(y, g) => run(y flatMap (a => g(a) flatMap f))
         }
+        // Wieso meint der Compiler dies wäre möglich?
+        // final in der Methoden deklaration
+        case _ => throw new RuntimeException("Was fuer ein scheiss")
     }
 
 }
