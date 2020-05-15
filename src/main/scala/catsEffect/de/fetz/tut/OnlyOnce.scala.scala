@@ -13,7 +13,7 @@ object OnlyOnce {
   def start(d: Deferred[IO, Int]): IO[Unit] = {
     val attemptCompletion: Int => IO[Unit] = n => d.complete(n).attempt.void
 
-    // d.get block's bis gefuellt, daher immer das race zuerst, das füllt die das d
+    // d.get block's bis gefuellt, daher rennt immer das race zuerst, das füllt die das d
     val a : IO[List[Any]] = List(
       IO.race(attemptCompletion(1), attemptCompletion(2)),
       d.get.flatMap { n => IO(println(show"Result: $n")) }
