@@ -6,3 +6,9 @@
 target 
 project/target 
 project/project 
+.bloop
+.metals
+.vscode
+.cache
+metals.sbt
+sbt.json
