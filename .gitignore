@@ -5,6 +5,7 @@
 .settings 
 target 
 project/target 
+<<<<<<< HEAD
 project/project 
 .bloop
 .metals
@@ -12,3 +13,10 @@ project/project
 .cache
 metals.sbt
 sbt.json
+=======
+project/project
+.idea/
+.cache-main
+.cache-tests
+.vscode/ 
+>>>>>>> 61a1a22330fff58588541339d9290cf7612e4e8a
