@@ -23,7 +23,8 @@ libraryDependencies += "org.scalaz"             %% "scalaz-scalacheck-binding" %
 libraryDependencies += "org.scalaz.stream"      %% "scalaz-stream" % "0.8.6"
 libraryDependencies += "org.spire-math"         %% "spire"         % "0.13.0"
 libraryDependencies += "org.typelevel"          %% "cats-effect"  % "2.1.3"
-    
+libraryDependencies += "org.typelevel"          %% "cats-parse" % "0.3.3"
+libraryDependencies += "org.typelevel"          %% "jawn-ast" % "1.1.2"    
     
     
 
